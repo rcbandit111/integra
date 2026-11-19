@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - integra-postgres-data:/var/lib/postgresql/data
+      - integra-postgres-data:/var/lib/postgresql/integra/data
 
 volumes:
   integra-postgres-data:
