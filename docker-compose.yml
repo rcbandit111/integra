@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: integra-postgres
+    environment:
+      POSTGRES_DB: integra
+      POSTGRES_USER: integra
+      POSTGRES_PASSWORD: integra
+    ports:
+      - "5432:5432"
+    volumes:
+      - integra-postgres-data:/var/lib/postgresql/data
+
+volumes:
+  integra-postgres-data:
